@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-// import { useRouter } from 'next/router'
 import { useRouter } from 'next/navigation'
 
 const Footer = () => {
@@ -20,7 +19,7 @@ const Footer = () => {
                 >
                     <button className="transform transition-transform duration-300 hover:translate-y-1 hover:scale-105">
                         <Image
-                            className="h-[35px] w-[35px] md:h-[45px] md:w-[45px]"
+                            className="h-[35px] w-[35px] md:h-[45px] md:w-[45px] dark:invert"
                             src={`/github-icon.png`}
                             alt="logo"
                             width={30}
@@ -37,7 +36,7 @@ const Footer = () => {
                 >
                     <button className="transform transition-transform duration-300 hover:translate-y-1 hover:scale-105">
                         <Image
-                            className="h-[35px] w-[35px] md:h-[45px] md:w-[45px]"
+                            className="h-[35px] w-[35px] md:h-[45px] md:w-[45px] dark:invert"
                             src={`/gmail-icon.png`}
                             alt="logo"
                             width={30}
