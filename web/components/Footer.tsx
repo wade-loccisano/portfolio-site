@@ -1,13 +1,8 @@
-'use client';
-
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { useRouter } from 'next/navigation'
 
 const Footer = () => {
-    const router = useRouter();
-
     return (
         <div className='h-20 z-10 section_container'>
             <div className='flex justify-center'>
