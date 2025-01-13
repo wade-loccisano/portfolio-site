@@ -1,7 +1,7 @@
 'use client';
 
 import { sendEmail } from '@/utils/send-email';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 export type FormData = {
@@ -11,11 +11,13 @@ export type FormData = {
 };
 
 const ContactForm: FC = () => {
+    const [submitted, setSubmitted] = useState(false);
     const { register, handleSubmit, reset } = useForm<FormData>();
 
     function onSubmit(data: FormData) {
         sendEmail(data);
-        reset();
+        // reset();
+        setSubmitted(true);
     }
 
     return (
@@ -25,23 +27,29 @@ const ContactForm: FC = () => {
                     type='text'
                     placeholder='Name'
                     className='px-3 py-1 border'
+                    disabled={submitted}
                     {...register('name', { required: true })}
                 />
                 <input
                     type='email'
                     placeholder='example@domain.com'
                     className='my-3 px-3 py-1 border'
+                    disabled={submitted}
                     {...register('email', { required: true })}
                 />
                 <textarea
                     rows={4}
                     placeholder='Type your message'
                     className='px-3 py-1 border resize-none'
+                    disabled={submitted}
                     {...register('message', { required: true })}
                 ></textarea>
                 <div className="flex justify-center mt-8">
-                    <button className="p-2 border">
-                        Submit
+                    <button
+                        className={`p-2 border ${submitted ? 'bg-gray-100 dark:bg-gray-800' : ''}`}
+                        disabled={submitted}
+                    >
+                        {submitted ? "Thanks" : "Submit"}
                     </button>
                 </div>
             </div>
