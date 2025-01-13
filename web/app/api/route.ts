@@ -3,6 +3,7 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
 export async function GET(request: NextRequest) {
+  console.log(request)
   return NextResponse.json({ message: 'hi there' });
 }
 
