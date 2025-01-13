@@ -12,7 +12,7 @@ export type FormData = {
 
 const ContactForm: FC = () => {
     const [submitted, setSubmitted] = useState(false);
-    const { register, handleSubmit, reset } = useForm<FormData>();
+    const { register, handleSubmit } = useForm<FormData>();
 
     function onSubmit(data: FormData) {
         sendEmail(data);
