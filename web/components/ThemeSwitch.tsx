@@ -21,16 +21,16 @@ const ThemeSwitch = () => {
         <>
             {mounted && <div className="p-4">
                 {resolvedTheme === 'light' && <button
-                    className='p-2 border'
+                    className='p-2 border text-sm'
                     onClick={() => activateDarkClick()}
                 >
-                    Dark Theme
+                    Dark
                 </button>}
                 {resolvedTheme === 'dark' && <button
-                    className='p-2 border'
+                    className='p-2 border text-sm'
                     onClick={() => activateLightClick()}
                 >
-                    Light Theme
+                    Light
                 </button>}
             </div>}
         </>

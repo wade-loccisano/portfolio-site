@@ -33,7 +33,7 @@ const skills = [
 const Skills = () => {
     return (
         <section id="skill-section" className="section_container flex justify-center">
-            <div className="flex flex-col w-[30%]">
+            <div className="flex flex-col  w-[90%] lg:w-[50%] xl:w-[30%]">
                 <div className="text-xl md:text-2xl border-b-2 border-slate-400 font-bold text-center">
                     Technical Skills
                 </div>
