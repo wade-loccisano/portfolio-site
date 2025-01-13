@@ -33,7 +33,7 @@ const skills = [
 const Skills = () => {
     return (
         <section id="skill-section" className="section_container flex justify-center">
-            <div className="flex flex-col w-[30%]">
+            <div className="flex flex-col  w-[90%] lg:w-[50%] xl:w-[30%]">
                 <div className="text-xl md:text-2xl border-b-2 border-slate-400 font-bold text-center">
                     Technical Skills
                 </div>
@@ -50,7 +50,7 @@ const Skills = () => {
                                             <div className="flex flex-row flex-wrap justify-center">
                                                 {skill.skills.map((name, i) => {
                                                     return (
-                                                        <div key={i} className="m-1 px-2 border border-black rounded-full bg-white">
+                                                        <div key={i} className="m-1 px-2 border border-black dark:border-white rounded-full">
                                                             {name}
                                                         </div>
                                                     );

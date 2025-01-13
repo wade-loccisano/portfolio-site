@@ -1,15 +1,12 @@
 import React from 'react'
+import ThemeSwitch from './ThemeSwitch'
 
 const Navbar = () => {
     return (
-        <div className='fixed top-0 left-0 w-full h-16 z-10'>
+        <div className='fixed top-0 left-0 w-full h-16 z-10 bg-white dark:bg-black'>
             <header className="section_container !py-0">
                 <nav className="flex flex-row-reverse">
-                    <div className="p-4">
-                        <button className='p-2 border'>
-                            Toggle Theme
-                        </button>
-                    </div>
+                    <ThemeSwitch></ThemeSwitch>
                 </nav>
             </header>
         </div>
