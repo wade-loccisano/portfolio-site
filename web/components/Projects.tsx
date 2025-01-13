@@ -2,14 +2,14 @@ import React from 'react'
 
 const projects = [
     {
-        name: 'App',
+        name: 'GLM Website',
     },
-    {
-        name: 'Website',
-    },
-    {
-        name: 'Front end',
-    },
+    // {
+    //     name: 'Website',
+    // },
+    // {
+    //     name: 'Front end',
+    // },
 ];
 
 const Projects = () => {
@@ -23,12 +23,13 @@ const Projects = () => {
                 </div>
             </section>
             <section id="project-section" className="section_container flex justify-center">
-                <div className="flex justify-between w-full">
+                <div className="flex justify-between">
+                    {/* <div className="flex justify-between w-full"> */}
                     {projects.map((project, i) => {
                         return (
                             <div key={i}>
-                                <div className="bg-black">
-                                    <div className="min-w-[316px] min-h-[220px]">
+                                <div className="bg-black dark:bg-white">
+                                    <div className="min-w-[355px] min-h-[320px]">
                                         placeholder
                                     </div>
                                 </div>
