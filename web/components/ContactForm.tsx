@@ -32,7 +32,7 @@ const ContactForm: FC = () => {
                 />
                 <input
                     type='email'
-                    placeholder='example@domain.com'
+                    placeholder='Email'
                     className='my-3 px-3 py-1 border'
                     disabled={submitted}
                     {...register('email', { required: true })}
@@ -49,7 +49,7 @@ const ContactForm: FC = () => {
                         className={`p-2 border ${submitted ? 'bg-gray-100 dark:bg-gray-800' : ''}`}
                         disabled={submitted}
                     >
-                        {submitted ? "Thanks" : "Submit"}
+                        {submitted ? "Thank You" : "Submit"}
                     </button>
                 </div>
             </div>
