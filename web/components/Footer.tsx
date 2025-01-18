@@ -18,10 +18,14 @@ const Footer = () => {
             <div className='flex justify-center'>
                 {links.map((link) => {
                     return (
-                        <FooterLink
-                            linkHref={link.href}
-                            linkIconSrc={link.imgSrc}
-                        ></FooterLink>
+                        <div
+                            id={link.href}
+                        >
+                            <FooterLink
+                                linkHref={link.href}
+                                linkIconSrc={link.imgSrc}
+                            ></FooterLink>
+                        </div>
                     )
                 })}
             </div>
