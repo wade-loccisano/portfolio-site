@@ -26,7 +26,7 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-            <section id="project-section" className="section_container flex justify-center">
+            <section id="project-list" className="section_container flex justify-center">
                 <div className="flex justify-between">
                     {/* <div className="flex justify-between w-full"> */}
                     {projects.map((project, i) => {
