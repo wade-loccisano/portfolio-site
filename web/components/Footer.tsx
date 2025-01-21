@@ -19,7 +19,7 @@ const Footer = () => {
                 {links.map((link) => {
                     return (
                         <div
-                            id={link.href}
+                            key={link.href}
                         >
                             <FooterLink
                                 linkHref={link.href}
