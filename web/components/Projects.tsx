@@ -3,21 +3,16 @@ import ProjectCard from './ProjectCard';
 
 export type Project = {
     name: string,
+    imgSrc: string,
     url: string,
 }
 
 export const projects: Project[] = [
     {
-        name: 'GLM Website',
-        // description: "",
-        url: ""
+        name: 'Gaming\'s Lost Memories Podcast Website',
+        imgSrc: '/project-glm.png',
+        url: "https://www.gamingslostmemories.com"
     },
-    // {
-    //     name: 'Website',
-    // },
-    // {
-    //     name: 'Front end',
-    // },
 ];
 
 const Projects = () => {
