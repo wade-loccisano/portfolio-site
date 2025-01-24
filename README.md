@@ -1,6 +1,9 @@
 # Portfolio Site
 
-This is a portfolio site built in NextJs
+[See it live on Vercel here](https://wade-loccisano-site.vercel.app/)
+
+## Description
+This is a portfolio site built in NextJs deployed to Vercel
 
 ## Install
 

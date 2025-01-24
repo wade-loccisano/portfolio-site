@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillLabel from './SkillLabel';
 
 const skills = [
     {
@@ -50,8 +51,8 @@ const Skills = () => {
                                             <div className="flex flex-row flex-wrap justify-center">
                                                 {skill.skills.map((name, i) => {
                                                     return (
-                                                        <div key={i} className="m-1 px-2 border border-black dark:border-white rounded-full">
-                                                            {name}
+                                                        <div key={i}>
+                                                            <SkillLabel name={name}></SkillLabel>
                                                         </div>
                                                     );
                                                 })}
