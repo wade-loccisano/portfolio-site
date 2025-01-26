@@ -3,7 +3,6 @@ import React from 'react'
 const Landing = () => {
     return (
         <section className="section_container my-16 xs:my-48">
-            {/* <section className="section_container  my-8 xs:my-16"> */}
             <h1 className="text-center text-3xl xs:text-6xl">
                 Wade Loccisano
             </h1>
