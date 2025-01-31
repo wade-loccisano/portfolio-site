@@ -53,7 +53,7 @@ const ContactForm: FC = () => {
                     </button>
                 </div>
             </div>
-        </form >
+        </form>
     );
 };
 
