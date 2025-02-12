@@ -11,7 +11,7 @@
 }
 
 .section_container {
-  @apply max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl py-10 mx-auto;
+  @apply max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto;
 }
 
 .theme_transition {
