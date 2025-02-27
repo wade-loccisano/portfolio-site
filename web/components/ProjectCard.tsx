@@ -10,26 +10,29 @@ const ProjectCard = ({
 }) => {
     return (
         <>
-            <div className="bg-black dark:bg-white min-w-[250px] min-h-[220px] xs:min-w-[350px] xs:min-h-[235px] relative border-2 border-black dark:border-white">
-                <Link
-                    className="flex justify-center items-center"
-                    href={project.url}
-                    target='_blank'
-                    key={2}
-                >
-                    <Image
-                        className=""
-                        src={project.imgSrc}
-                        alt="Image of the project"
-                        fill
-                        priority
-                        style={{
-                            objectFit: 'cover',
-                        }}
-                    />
-                </Link>
+            <div className="p-4">
+                {/* img standard 250 220 */}
+                <div className="bg-black dark:bg-white w-[350px] h-[235px] relative border-2 border-black dark:border-white">
+                    <Link
+                        className="flex justify-center items-center"
+                        href={project.url}
+                        target='_blank'
+                        key={2}
+                    >
+                        <Image
+                            className=""
+                            src={project.imgSrc}
+                            alt="Image of the project"
+                            fill
+                            priority
+                            style={{
+                                objectFit: 'cover',
+                            }}
+                        />
+                    </Link>
+                </div>
             </div>
-            <div className="p-2">
+            <div className="">
                 <Link
                     className="flex justify-center items-center"
                     href={project.url}

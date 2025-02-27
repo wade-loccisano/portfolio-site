@@ -10,7 +10,12 @@ export type Project = {
 
 export const projects: Project[] = [
     {
-        name: 'Gaming\'s Lost Memories Podcast Website',
+        name: 'Flashcards Lite via Flask',
+        imgSrc: '/project-flask-flashcards.png',
+        url: "https://flashcards-lite.onrender.com"
+    },
+    {
+        name: 'GLM Podcast Website',
         imgSrc: '/project-glm.png',
         url: "https://www.gamingslostmemories.com"
     },
@@ -21,7 +26,7 @@ const Projects = () => {
         <>
             <ProjectTitleSection></ProjectTitleSection>
             <section id="project-list" className="section_container flex justify-center">
-                <div className="flex justify-between">
+                <div className="flex flex-col lg:flex-row items-center justify-between xl:w-4/5">
                     {projects.map((project, i) => {
                         return (
                             <div key={i}>
